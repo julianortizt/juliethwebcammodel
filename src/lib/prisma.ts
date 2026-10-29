@@ -1,10 +1,16 @@
 import { PrismaClient } from '@prisma/client'
 
-// @ts-ignore
-const globalForPrisma = globalThis as unknown as { prisma: PrismaClient }
+const globalForPrisma = globalThis as unknown as { prisma?: PrismaClient }
 
-// @ts-ignore
-export const prisma = globalForPrisma.prisma || new PrismaClient()
+function createPrismaClient() {
+  try {
+    return new PrismaClient()
+  } catch (e) {
+    // Fallback during build
+    return new PrismaClient({})
+  }
+}
 
-// @ts-ignore
+export const prisma = globalForPrisma.prisma ?? createPrismaClient()
+
 if (process.env.NODE_ENV !== 'production') globalForPrisma.prisma = prisma
