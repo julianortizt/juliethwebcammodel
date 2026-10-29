@@ -66,9 +66,16 @@ const stats = [
 export default function HomePage() {
   const { t } = useTranslation()
   const [mounted, setMounted] = useState(false)
+  const [particles, setParticles] = useState<Array<{left: string, top: string, delay: string, duration: string}>>([])
 
   useEffect(() => {
     setMounted(true)
+    setParticles(Array.from({ length: 20 }).map(() => ({
+      left: `${Math.random() * 100}%`,
+      top: `${Math.random() * 100}%`,
+      delay: `${Math.random() * 5}s`,
+      duration: `${3 + Math.random() * 4}s`,
+    })))
   }, [])
 
   return (
@@ -86,15 +93,15 @@ export default function HomePage() {
 
         {/* Floating particles */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          {Array.from({ length: 20 }).map((_, i) => (
+          {mounted && particles.map((particle, i) => (
             <div
               key={i}
               className="absolute w-1 h-1 bg-pink-400/30 rounded-full animate-pulse"
               style={{
-                left: `${Math.random() * 100}%`,
-                top: `${Math.random() * 100}%`,
-                animationDelay: `${Math.random() * 5}s`,
-                animationDuration: `${3 + Math.random() * 4}s`,
+                left: particle.left,
+                top: particle.top,
+                animationDelay: particle.delay,
+                animationDuration: particle.duration,
               }}
             />
           ))}
