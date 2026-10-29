@@ -178,9 +178,9 @@ export default function AdminSettings() {
                   <div key={itemIndex} className="grid gap-2">
                     <label className="text-sm font-medium text-white/70">
                       {item.label}
-                      {item.description && (
+                      {(item as any).description && (
                         <span className="text-white/30 ml-2">
-                          {item.description}
+                          {(item as any).description}
                         </span>
                       )}
                     </label>
@@ -188,12 +188,12 @@ export default function AdminSettings() {
                     {item.type === 'select' && (
                       <select
                         defaultValue={item.value}
-                        disabled={item.disabled}
+                        disabled={(item as any).disabled}
                         className={`px-4 py-2.5 rounded-xl bg-white/5 border border-white/10 text-white text-sm focus:outline-none focus:border-pink-500/50 ${
-                          item.disabled ? 'opacity-50' : ''
+                          (item as any).disabled ? 'opacity-50' : ''
                         }`}
                       >
-                        {item.options.map((opt) => (
+                        {((item as any).options || []).map((opt: any) => (
                           <option key={opt.value} value={opt.value}>
                             {opt.label}
                           </option>
@@ -204,7 +204,7 @@ export default function AdminSettings() {
                     {item.type === 'textarea' && (
                       <textarea
                         defaultValue={item.value}
-                        placeholder={item.placeholder}
+                        placeholder={(item as any).placeholder}
                         className="w-full px-4 py-2.5 rounded-xl bg-white/5 border border-white/10 text-white placeholder:text-white/30 focus:outline-none focus:border-pink-500/50 text-sm resize-none h-24"
                       />
                     )}
@@ -212,10 +212,10 @@ export default function AdminSettings() {
                     {(item.type === 'text' || item.type === 'number') && (
                       <Input
                         defaultValue={item.value}
-                        placeholder={item.placeholder}
+                        placeholder={(item as any).placeholder}
                         type={item.type === 'number' ? 'number' : 'text'}
-                        disabled={item.disabled}
-                        className={item.disabled ? 'opacity-50' : ''}
+                        disabled={(item as any).disabled}
+                        className={(item as any).disabled ? 'opacity-50' : ''}
                       />
                     )}
 
@@ -223,9 +223,9 @@ export default function AdminSettings() {
                       <Input
                         type="password"
                         defaultValue={item.value}
-                        placeholder={item.placeholder}
-                        disabled={item.disabled}
-                        className={item.disabled ? 'opacity-50' : ''}
+                        placeholder={(item as any).placeholder}
+                        disabled={(item as any).disabled}
+                        className={(item as any).disabled ? 'opacity-50' : ''}
                       />
                     )}
 
@@ -245,7 +245,7 @@ export default function AdminSettings() {
                       </div>
                     )}
 
-                    {item.disabled && (
+                    {(item as any).disabled && (
                       <p className="text-xs text-white/30 mt-1">
                         Configuración de Stripe (editar en .env)
                       </p>
