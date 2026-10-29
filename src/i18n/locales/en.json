@@ -1,0 +1,154 @@
+{
+  "nav": {
+    "home": "Home",
+    "gallery": "Gallery",
+    "live": "Live",
+    "subscribe": "Subscribe",
+    "gifts": "Gifts",
+    "admin": "Admin Panel",
+    "login": "Login",
+    "logout": "Logout",
+    "profile": "My Profile",
+    "language": "Language"
+  },
+  "home": {
+    "welcome": "Welcome to my world",
+    "subtitle": "Real emotions, exclusive moments",
+    "discover": "Discover a unique experience",
+    "subscribeNow": "Subscribe now",
+    "watchTrail": "Watch trailer",
+    "modelName": "Julieth",
+    "location": "Colombia",
+    "bio": "Colombian webcam model passionate about connecting with every viewer in an authentic and exciting way."
+  },
+  "gallery": {
+    "title": "Gallery",
+    "loadMore": "Load more",
+    "newest": "Newest",
+    "popular": "Most popular"
+  },
+  "live": {
+    "title": "Live Stream",
+    "waiting": "Waiting for the stream to start...",
+    "viewerCount": "Viewers",
+    "tipAmount": "Gift amount",
+    "sendGift": "Send gift",
+    "chatMessage": "Type a message...",
+    "send": "Send",
+    "noChat": "No messages yet",
+    "privateNote": "This message is private"
+  },
+  "subscribe": {
+    "title": "Subscription Plans",
+    "benefits": "Benefits",
+    "monthly": "Monthly",
+    "annual": "Annual",
+    "save": "Save 20%",
+    "priceMonthly": "45,000 COP/month",
+    "priceAnnual": "432,000 COP/year",
+    "perMonth": "(36,000 COP/month)",
+    "features": {
+      "unlimitedAccess": "Unlimited chat access",
+      "prioritySupport": "Priority support",
+      "privateMessages": "Private messages",
+      "exclusiveContent": "Exclusive content",
+      "giftsPriority": "Gift priority",
+      "videoCalls": "Monthly video calls"
+    },
+    "subscribe": "Subscribe",
+    "currentPlan": "Your current plan",
+    "renew": "Renew",
+    "cancel": "Cancel subscription"
+  },
+  "gifts": {
+    "title": "Gifts",
+    "subtitle": "Show your appreciation with a special gift",
+    "selectGift": "Select a gift",
+    "yourMessage": "Your message (optional)",
+    "send": "Send gift",
+    "sending": "Sending...",
+    "success": "Gift sent successfully!",
+    "thankYou": "Thank you for your gift! ❤️",
+    "recent": "Recent gifts",
+    "noGifts": "No gifts yet",
+    "gifts": {
+      "rose": { "name": "Roses", "price": 5000, "emoji": "🌹" },
+      "chocolate": { "name": "Chocolate", "price": 10000, "emoji": "🍫" },
+      "jewelry": { "name": "Jewelry", "price": 50000, "emoji": "💎" },
+      "dream": { "name": "From your love", "price": 100000, "emoji": "💕" },
+      "luxury": { "name": "Luxury", "price": 500000, "emoji": "👑" }
+    }
+  },
+  "admin": {
+    "dashboard": "Dashboard",
+    "users": "Users",
+    "subscribers": "Subscribers",
+    "messages": "Messages",
+    "gifts": "Gifts",
+    "settings": "Settings",
+    "analytics": "Analytics",
+    "recentActivity": "Recent activity",
+    "totalUsers": "Total users",
+    "activeSubscribers": "Active subscribers",
+    "totalGifts": "Total gifts",
+    "revenue": "Revenue",
+    "pendingMessages": "Pending messages",
+    "manageUsers": "Manage users",
+    "manageSettings": "Manage settings",
+    "delete": "Delete",
+    "edit": "Edit",
+    "status": "Status",
+    "actions": "Actions",
+    "noUsers": "No users registered"
+  },
+  "auth": {
+    "login": "Login",
+    "register": "Register",
+    "email": "Email address",
+    "password": "Password",
+    "confirmPassword": "Confirm password",
+    "name": "Full name",
+    "forgotPassword": "Forgot your password?",
+    "noAccount": "Don't have an account? Register",
+    "hasAccount": "Already have an account? Login",
+    "loginSuccess": "Welcome back!",
+    "logoutSuccess": "Logged out successfully",
+    "error": "Authentication error",
+    "adminLogin": "Login as admin"
+  },
+  "geo": {
+    "blocked": "Access restricted",
+    "blockedMessage": "This website is only available for users located in Colombia. If you are in Colombia, please refresh the page.",
+    "recheck": "Check location",
+    "captchaTitle": "Additional verification",
+    "captchaMessage": "To confirm you are from Colombia, complete the verification:"
+  },
+  "errors": {
+    "generic": "Something went wrong. Please try again.",
+    "notFound": "Page not found",
+    "unauthorized": "Unauthorized",
+    "serverError": "Server error"
+  },
+  "common": {
+    "loading": "Loading...",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "close": "Close",
+    "confirm": "Confirm",
+    "yes": "Yes",
+    "no": "No",
+    "back": "Back",
+    "next": "Next",
+    "search": "Search",
+    "noResults": "No results found",
+    "viewAll": "View all"
+  },
+  "footer": {
+    "copyright": "© 2026 Julieth Webcam Model. All rights reserved.",
+    "terms": "Terms of service",
+    "privacy": "Privacy policy",
+    "cookies": "Cookie policy"
+  }
+}

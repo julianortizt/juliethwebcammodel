@@ -1,0 +1,154 @@
+{
+  "nav": {
+    "home": "Início",
+    "gallery": "Galeria",
+    "live": "Ao Vivo",
+    "subscribe": "Assinar",
+    "gifts": "Presentes",
+    "admin": "Painel Admin",
+    "login": "Entrar",
+    "logout": "Sair",
+    "profile": "Meu Perfil",
+    "language": "Idioma"
+  },
+  "home": {
+    "welcome": "Bem-vindo ao meu mundo",
+    "subtitle": "Emoções reais, momentos exclusivos",
+    "discover": "Descubra uma experiência única",
+    "subscribeNow": "Assine agora",
+    "watchTrail": "Ver trailer",
+    "modelName": "Julieth",
+    "location": "Colômbia",
+    "bio": "Modelo webcam colombiana apaixonada por conectar com cada espectador de forma autêntica e emocionante."
+  },
+  "gallery": {
+    "title": "Galeria",
+    "loadMore": "Carregar mais",
+    "newest": "Mais recentes",
+    "popular": "Mais populares"
+  },
+  "live": {
+    "title": "Transmissão ao Vivo",
+    "waiting": "Aguarde o início da transmissão...",
+    "viewerCount": "Espectadores",
+    "tipAmount": "Valor do presente",
+    "sendGift": "Enviar presente",
+    "chatMessage": "Digite uma mensagem...",
+    "send": "Enviar",
+    "noChat": "Nenhuma mensagem ainda",
+    "privateNote": "Esta mensagem é privada"
+  },
+  "subscribe": {
+    "title": "Planos de Assinatura",
+    "benefits": "Benefícios",
+    "monthly": "Mensal",
+    "annual": "Anual",
+    "save": "Poupe 20%",
+    "priceMonthly": "45.000 COP/mês",
+    "priceAnnual": "432.000 COP/ano",
+    "perMonth": "(36.000 COP/mês)",
+    "features": {
+      "unlimitedAccess": "Acesso ilimitado ao chat",
+      "prioritySupport": "Suporte prioritário",
+      "privateMessages": "Mensagens privadas",
+      "exclusiveContent": "Conteúdo exclusivo",
+      "giftsPriority": "Prioridade em presentes",
+      "videoCalls": "Videochamadas mensais"
+    },
+    "subscribe": "Assinar",
+    "currentPlan": "Seu plano atual",
+    "renew": "Renovar",
+    "cancel": "Cancelar assinatura"
+  },
+  "gifts": {
+    "title": "Presentes",
+    "subtitle": "Mostre sua apreciação com um presente especial",
+    "selectGift": "Selecione um presente",
+    "yourMessage": "Sua mensagem (opcional)",
+    "send": "Enviar presente",
+    "sending": "Enviando...",
+    "success": "Presente enviado com sucesso!",
+    "thankYou": "Obrigado pelo seu presente! ❤️",
+    "recent": "Presentes recentes",
+    "noGifts": "Nenhum presente ainda",
+    "gifts": {
+      "rose": { "name": "Rosas", "price": 5000, "emoji": "🌹" },
+      "chocolate": { "name": "Chocolate", "price": 10000, "emoji": "🍫" },
+      "jewelry": { "name": "Joias", "price": 50000, "emoji": "💎" },
+      "dream": { "name": "Do seu amor", "price": 100000, "emoji": "💕" },
+      "luxury": { "name": "Luxo", "price": 500000, "emoji": "👑" }
+    }
+  },
+  "admin": {
+    "dashboard": "Painel",
+    "users": "Usuários",
+    "subscribers": "Assinantes",
+    "messages": "Mensagens",
+    "gifts": "Presentes",
+    "settings": "Configurações",
+    "analytics": "Analíticas",
+    "recentActivity": "Atividade recente",
+    "totalUsers": "Total de usuários",
+    "activeSubscribers": "Assinantes ativos",
+    "totalGifts": "Total de presentes",
+    "revenue": "Receita",
+    "pendingMessages": "Mensagens pendentes",
+    "manageUsers": "Gerenciar usuários",
+    "manageSettings": "Gerenciar configurações",
+    "delete": "Excluir",
+    "edit": "Editar",
+    "status": "Status",
+    "actions": "Ações",
+    "noUsers": "Nenhum usuário registrado"
+  },
+  "auth": {
+    "login": "Entrar",
+    "register": "Registrar",
+    "email": "Endereço de e-mail",
+    "password": "Senha",
+    "confirmPassword": "Confirmar senha",
+    "name": "Nome completo",
+    "forgotPassword": "Esqueceu sua senha?",
+    "noAccount": "Não tem uma conta? Registre-se",
+    "hasAccount": "Já tem uma conta? Entre",
+    "loginSuccess": "Bem-vindo de volta!",
+    "logoutSuccess": "Sessão encerrada com sucesso",
+    "error": "Erro de autenticação",
+    "adminLogin": "Entrar como administrador"
+  },
+  "geo": {
+    "blocked": "Acesso restrito",
+    "blockedMessage": "Este site só está disponível para usuários localizados na Colômbia. Se você está na Colômbia, por favor recarregue a página.",
+    "recheck": "Verificar localização",
+    "captchaTitle": "Verificação adicional",
+    "captchaMessage": "Para confirmar que você é da Colômbia, complete a verificação:"
+  },
+  "errors": {
+    "generic": "Algo deu errado. Por favor, tente novamente.",
+    "notFound": "Página não encontrada",
+    "unauthorized": "Não autorizado",
+    "serverError": "Erro do servidor"
+  },
+  "common": {
+    "loading": "Carregando...",
+    "save": "Salvar",
+    "cancel": "Cancelar",
+    "delete": "Excluir",
+    "edit": "Editar",
+    "close": "Fechar",
+    "confirm": "Confirmar",
+    "yes": "Sim",
+    "no": "Não",
+    "back": "Voltar",
+    "next": "Próximo",
+    "search": "Buscar",
+    "noResults": "Nenhum resultado encontrado",
+    "viewAll": "Ver tudo"
+  },
+  "footer": {
+    "copyright": "© 2026 Julieth Webcam Model. Todos os direitos reservados.",
+    "terms": "Termos de serviço",
+    "privacy": "Política de privacidade",
+    "cookies": "Política de cookies"
+  }
+}
