@@ -15,7 +15,6 @@ import {
   Crown,
   Sparkles,
   Send,
-  Star,
 } from 'lucide-react'
 import { formatCurrency } from '@/lib/utils'
 
@@ -67,7 +66,7 @@ const giftOptions = [
   },
 ]
 
-export default function GiftsPage() {
+export default function GiftsClient() {
   const { t } = useTranslation()
   const { data: session } = useSession()
   const searchParams = useSearchParams()
@@ -112,7 +111,6 @@ export default function GiftsPage() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-950 via-purple-950 to-gray-950">
-      {/* Success message */}
       {success && (
         <div className="bg-emerald-500/10 border border-emerald-500/20 rounded-2xl p-6 mb-8 text-center animate-in fade-in">
           <div className="text-4xl mb-2">🎁</div>
@@ -151,7 +149,6 @@ export default function GiftsPage() {
         </div>
 
         <div className="grid lg:grid-cols-3 gap-8">
-          {/* Gift grid */}
           <div className="lg:col-span-2">
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
               {giftOptions.map((gift) => (
@@ -195,7 +192,6 @@ export default function GiftsPage() {
             </div>
           </div>
 
-          {/* Gift detail / checkout */}
           <div className="lg:col-span-1">
             <Card className="sticky top-24">
               <CardContent className="p-6">
@@ -216,7 +212,6 @@ export default function GiftsPage() {
                       </p>
                     </div>
 
-                    {/* Message input */}
                     <div className="mb-6">
                       <label className="block text-sm font-medium text-white/70 mb-2">
                         {t('gifts.yourMessage')}
@@ -229,7 +224,6 @@ export default function GiftsPage() {
                       />
                     </div>
 
-                    {/* Send button */}
                     <Button
                       onClick={handleSendGift}
                       disabled={sending || !session}
@@ -269,26 +263,6 @@ export default function GiftsPage() {
                 )}
               </CardContent>
             </Card>
-          </div>
-        </div>
-
-        {/* Recent gifts preview */}
-        <div className="mt-16">
-          <h2 className="text-2xl font-bold text-white text-center mb-6">
-            🎁 Regalos que hacen la diferencia
-          </h2>
-          <div className="flex flex-wrap justify-center gap-4 opacity-30">
-            {[...giftOptions, ...giftOptions].map((gift, i) => (
-              <div
-                key={`${gift.id}-${i}`}
-                className="px-4 py-3 rounded-xl bg-white/5 border border-white/5"
-              >
-                <span className="text-2xl">{gift.emoji}</span>
-                <span className="ml-2 text-sm text-white/50">
-                  {formatCurrency(gift.price, 'USD')}
-                </span>
-              </div>
-            ))}
           </div>
         </div>
       </div>
