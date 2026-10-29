@@ -2,21 +2,20 @@ import { PrismaClient } from '@prisma/client'
 
 const globalForPrisma = globalThis as unknown as { prisma?: PrismaClient }
 
-function createPrismaClient() {
+function createClient() {
   try {
-    const { PrismaPg } = require('@prisma/adapter-pg')
-    const connectionString = process.env.DATABASE_URL
-    if (!connectionString) {
-      throw new Error('No DATABASE_URL')
+    if (process.env.DATABASE_URL) {
+      const { PrismaPg } = require('@prisma/adapter-pg')
+      const adapter = new PrismaPg({ connectionString: process.env.DATABASE_URL })
+      return new PrismaClient({ adapter })
     }
-    const adapter = new PrismaPg({ connectionString })
-    return new PrismaClient({ adapter })
   } catch (e) {
-    // Fallback for build time
-    return new PrismaClient({} as any)
+    // ignore
   }
+  // For build without DB
+  return new PrismaClient({} as any)
 }
 
-export const prisma = globalForPrisma.prisma ?? createPrismaClient()
+export const prisma = globalForPrisma.prisma || createClient()
 
 if (process.env.NODE_ENV !== 'production') globalForPrisma.prisma = prisma
